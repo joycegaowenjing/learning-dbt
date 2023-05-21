@@ -6,4 +6,4 @@ select
     created as created_at,
     status
 from 
-    {{source('stripe', 'payments')}}
+    {{source('stripe', 'payment')}}
