@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: stripe
-    database: dbt_jgao
+    database: dbt-tutorial
     schema: stripe
     tables:
-      - name: payments
+      - name: payment
