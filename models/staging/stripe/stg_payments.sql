@@ -6,4 +6,4 @@ select
     created as created_at,
     status
 from 
-    dbt-tutorial.stripe.payment
+    {{source('stripe', 'payments')}}
