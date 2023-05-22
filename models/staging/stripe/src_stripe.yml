@@ -6,8 +6,10 @@ sources:
     schema: stripe
     tables:
       - name: payment
+        description: raw payments data
         columns:
           - name: id
+            description: primary key for raw payments data
             tests:
               - unique
               - not_null
