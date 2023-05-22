@@ -1,16 +1,6 @@
 version: 2
 
 models:
-  - name: customers
-    description: one unique record per customer
-    columns:
-      - name: customer_id
-        description: primary key for customers
-        tests:
-          - unique
-          - not_null
-      - name: first_order_date
-        description: NULL when a customer has not yet placed an order
 
   - name: stg_customers
     description: this cleans up customer data, such that we have 1 unique record per customer
